@@ -1,7 +1,12 @@
-<h1>l337 Phrase Translator</h1>
+<div class="container text-center">
+  <h1>Leet Phrase Translator</h1>
+  <h3>Please input the word:</h3>
+    <form action="<%= translate_path %>" method="GET">
+      <div class="form-group">
+        <label for="text">Your text:</label>
+        <input type="text" name="word" class="form-control" id="word">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
-<h3>Please input the word:</h3>
-  <form action="<%= translate_path %>" method="GET">
-    <input type="text" id="word" name="word" placeholder="Your word">
-    <input type="submit" value="L337 IT!">
-  </form>
